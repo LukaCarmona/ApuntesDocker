@@ -1,5 +1,7 @@
 # ApuntesDocker
 
+EL XAMMP APAGADO
+
 crear una carpeta en el escritorio
 entrar a git bash
 entrar a la carpeta cd ...
