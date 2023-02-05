@@ -7,8 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HOLO
-        
-    </h1>
+<?php
+    $host = 'nombre-sql';
+    $database = 'dbPruebas';
+    $user = 'root';
+    $password = '123';
+
+    $hostPDO = "mysql:host=$host;dbname=$database;";
+    $miPDO = new PDO($hostPDO, $user, $password);
+
+    $query = $miPDO->prepare('SELECT id_articulo, nombre, precio, cantidad FROM pruebaDocker');
+    $query->execute();
+    $answer = $query->fetchAll();
+?>
+<?php 
+echo($answer[0]['nombre']);
+?>
 </body>
 </html>
