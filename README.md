@@ -29,3 +29,10 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin git@github.com:lukaquindon08/(Nombredeelrepositorio)
 git push -u origin main
+
+---
+
+para subir a un repositorio, meter la carpeta de mysql en el git ignore
+
+crear archivo llamado .gitignore
+y dentro el nombre de la carpeta(mysql)
